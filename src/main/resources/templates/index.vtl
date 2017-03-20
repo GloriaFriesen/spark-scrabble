@@ -1,0 +1,14 @@
+<!--index.vtl-->
+<form action="/result">
+  <div class="form-group">
+    <label for="word">Enter a word</label>
+    <input id="word" name="word" class="form-control" type="text">
+  </div>
+
+  <button type="submit" class="btn">Get Scrabble Score</button>
+</form>
+
+#if ($score)
+  <h2>Your Scrabble Score: </h2>
+    <h4>$score</h4>
+#end
